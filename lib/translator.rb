@@ -37,6 +37,7 @@ def get_english_meaning(file_path, emoticon)
   data.each do |name, value|
     value.each do |english, japanese|
       puts english
+    end
   end
 end
 
