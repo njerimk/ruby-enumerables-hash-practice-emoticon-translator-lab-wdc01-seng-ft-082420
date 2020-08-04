@@ -42,7 +42,7 @@ def get_english_meaning(file_path, emoticon)
     emoticon_hash
     end
   end
- puts emoticon_hash
+ emoticon_hash
 end
 
 get_english_meaning(file_path, "(ΘεΘ;)")
