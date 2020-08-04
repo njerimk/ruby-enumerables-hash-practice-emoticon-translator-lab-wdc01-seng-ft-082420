@@ -45,7 +45,7 @@ def get_english_meaning(file_path, emoticon)
  puts emoticon_hash
 end
 
-get_english_meaning(file_path, "☜(⌒▽⌒)☞")
+get_english_meaning(file_path, "(ΘεΘ;)")
 
 #☜(⌒▽⌒)☞
 #ヽ(ｏ`皿′ｏ)ﾉ
