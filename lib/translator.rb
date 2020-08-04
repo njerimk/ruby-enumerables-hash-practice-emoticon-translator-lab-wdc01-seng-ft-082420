@@ -31,6 +31,12 @@ def get_japanese_emoticon(file_path, emoticon)
   file_path = '.lib/emoticons.yml'
  get_japanese_emoticon(file_path,":)")
 
-def get_english_meaning
+def get_english_meaning(file_path, emoticon)
   # code goes here
+  data = load_library(file_path)
+  data.each do |key, value|
+    puts key
+  
 end
+
+get_english_meaning(file_path, ":)")
