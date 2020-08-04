@@ -33,16 +33,16 @@ def get_japanese_emoticon(file_path, emoticon)
 
 def get_english_meaning(file_path, emoticon)
   # code goes here
-  emoticon = "Sorry, that emoticon was not found"
+  emoticon_hash = "Sorry, that emoticon was not found"
   data = load_library(file_path)
   emoticon_result = data.select do |name, value|
     if emoticon == data[name][:japanese]
-    emoticon = name
+    emoticon_hash = name
     elsif emoticon == data[name][:japanese] = false
-    emoticon
+    emoticon_hash
     end
   end
- puts emoticon_result
+ puts emoticon_hash
 end
 
 get_english_meaning(file_path, "☜(⌒▽⌒)☞")
