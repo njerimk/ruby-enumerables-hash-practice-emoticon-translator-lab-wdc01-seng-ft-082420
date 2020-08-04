@@ -42,7 +42,7 @@ def get_english_meaning(file_path, emoticon)
     emoticon
     end
   end
- puts emoticon
+ puts emoticon_result
 end
 
 get_english_meaning(file_path, "☜(⌒▽⌒)☞")
