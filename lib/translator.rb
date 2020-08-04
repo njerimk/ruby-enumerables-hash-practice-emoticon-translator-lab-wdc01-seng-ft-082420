@@ -34,10 +34,11 @@ def get_japanese_emoticon(file_path, emoticon)
 def get_english_meaning(file_path, emoticon)
   # code goes here
   data = load_library(file_path)
-  data.select do |name, value|
+  emoticon_result = data.select do |name, value|
     emoticon == data[name][:japanese]
-    puts name
+    emoticon = name
   end
+ puts emoticon
 end
 
 get_english_meaning(file_path, "(^_-)")
