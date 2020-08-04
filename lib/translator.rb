@@ -40,7 +40,7 @@ def get_english_meaning(file_path, emoticon)
     emoticon = name
     elsif emoticon == data[name][:japanese] = false
     emoticon
-  end
+    end
   end
  puts emoticon
 end
