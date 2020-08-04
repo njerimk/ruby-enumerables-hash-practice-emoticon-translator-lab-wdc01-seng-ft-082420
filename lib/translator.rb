@@ -36,9 +36,9 @@ def get_english_meaning(file_path, emoticon)
   data = load_library(file_path)
   emoticon_result = data.select do |name, value|
     emoticon == data[name][:japanese]
-    emoticon = data[name][:japanese]
+    puts emoticon = data[name][:japanese]
   end
- puts emoticon
+ emoticon
 end
 
 get_english_meaning(file_path, "(^_-)")
