@@ -40,4 +40,4 @@ def get_english_meaning(file_path, emoticon)
   end
 end
 
-get_english_meaning(file_path, "(^_")
+get_english_meaning(file_path, "(^_-)")
