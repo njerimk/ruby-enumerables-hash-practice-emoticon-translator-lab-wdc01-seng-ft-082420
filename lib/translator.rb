@@ -34,9 +34,8 @@ def get_japanese_emoticon(file_path, emoticon)
 def get_english_meaning(file_path, emoticon)
   # code goes here
   data = load_library(file_path)
-  data.each do |name, value|
-    name.tap do |english, japanese|
-      puts japanese
+  data.select do |name, value|
+    puts emoticon == name
     end
   end
 end
