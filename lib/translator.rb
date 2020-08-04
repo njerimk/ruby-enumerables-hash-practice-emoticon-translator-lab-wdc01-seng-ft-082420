@@ -35,7 +35,7 @@ def get_english_meaning(file_path, emoticon)
   # code goes here
   data = load_library(file_path)
   data.each do |name, value|
-    key.each do |english, japanese|
+    name.each do |english, japanese|
       puts english
     end
   end
